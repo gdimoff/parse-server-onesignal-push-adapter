@@ -2,13 +2,12 @@
   "name": "parse-server-onesignal-push-adapter",
   "version": "1.0.0",
   "description": "One Signal push adapter for parse-server",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
-    "src/",
     "lib/"
   ],
   "scripts": {
-    "build": "babel src/ -d src/",
+    "build": "babel src/ -d lib/",
     "test": "TESTING=1 babel-node ./node_modules/.bin/isparta cover -x **/spec/** ./node_modules/jasmine/bin/jasmine.js",
     "prepublish": "npm run build"
   },
