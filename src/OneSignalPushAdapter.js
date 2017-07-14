@@ -112,7 +112,7 @@ export class OneSignalPushAdapter {
       this.sendToOneSignal(post, handleResponse);
     }.bind(this)
 
-    this.sendNext()
+    setTimeout(this.sendNext(), 20000);
 
     return promise;
   }
