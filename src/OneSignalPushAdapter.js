@@ -142,7 +142,7 @@ export class OneSignalPushAdapter {
 
     let promise = new Parse.Promise();
 
-    var chunk = 2000 // OneSignal can process 2000 devices at a time
+    var chunk = 1000 // OneSignal can process 2000 devices at a time
     var tokenlength=tokens.length;
     var offset = 0
     // handle onesignal response. Start next batch if there's not an error.
